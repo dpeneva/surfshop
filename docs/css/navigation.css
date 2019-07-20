@@ -1,0 +1,15 @@
+.site-nav ul {
+    display: flex;
+}
+
+.site-nav li {
+    display: block;
+    padding: 0 0.5em;
+}
+
+.site-nav a {
+    display: block;
+    padding: 0.5em;
+    color: #000;
+    font-weight: 600;
+}
