@@ -4,13 +4,15 @@
     padding: 0 2em;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none outside;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 .home-img {
     background: url('../img/home-img.jpg') no-repeat center;

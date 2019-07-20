@@ -3,13 +3,51 @@
 }
 
 .site-nav li {
-    display: block;
+    display: flex;
     padding: 0 0.5em;
+    justify-content: center;
+    align-items: center;
 }
 
-.site-nav a {
-    display: block;
-    padding: 0.5em;
+.site-nav.icons {
+    display: flex;
+}
+
+.site-nav.icons a {
+    font-size: 0.9em;
+}
+
+.site-nav a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em 0.7em;
     color: #000;
     font-weight: 600;
+    transition: 0.3s;
 }
+
+.site-nav.pages a {
+    border-bottom: 2px solid transparent;
+    
+    padding-bottom: 0;
+}
+
+.site-nav.pages a:hover {
+    border-bottom: 2px solid #E88345;
+}
+
+.site-nav.icons a {
+    border-radius: 50%;
+}
+
+.site-nav.icons a:hover {
+    background: #E88345;
+    color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    
+}
+
+
+
