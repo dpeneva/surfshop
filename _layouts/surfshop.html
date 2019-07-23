@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="{{site.baseurl}}/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
 </head>
-<body class="page-{{page.title}}">
+<body class="
+    {% if page.title %}page page-{{page.title | slugify }}{% endif %}
+    {% if page.home %}home{% endif %}
+
+  ">
 
   <div class="site">
       <header class="site-header">
           <nav class="site-nav pages">
               <ul>
                 {% for page in site.pages %}
-                  {% if page.title %}
+                {% if page.title and page.nomainnav != 1 %}
                   <li>
                     <a href="{{site.baseurl}}/{{ page.url }}">{{ page.title }}</a>
+                    {% if page.products %}
+                    <ul class="nav-products">
+                      <li><a href="">Boards</a></li>
+                      <li><a href="">Kites</a></li>
+                    </ul>
+                  {% endif %}
                   </li>
+                  
                   {% endif %}
                 {% endfor %}
               </ul>
@@ -58,6 +69,26 @@
       </aside>
 
       <footer class="site-footer">
+        <div>
+          <p>Susbscribe to our newsletter for all insights</p>
+          <form action="post">
+              <input type="email" name="email" placeholder="Enter your email">
+              <input type="submit" value="GO">
+          </form>
+        </div>
+        <div>
+          <p>Follow us</p> 
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+        <div>
+          
+        </div>
         <p>&copy; 2019 <a href="/">{{site.title}}</a></p>
       </footer>
   </div>

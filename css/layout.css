@@ -1,5 +1,10 @@
+.site-main {
+    display: flex;
+    flex-direction: column;
+} 
+
 .wrapper {
-    max-width: 70em;
+    max-width: 60em;
     margin: 0 auto;
     padding: 0 2em;
 }
@@ -12,10 +17,11 @@ li {
     list-style: none outside;
 }
 
-
-
-.home-img {
-    background: url('../img/home-img.jpg') no-repeat center;
-    background-size: cover;
-    height: 1000px;
+section {
+    padding: 1em 0;
 }
+
+.site-footer {
+    margin-top: auto;
+}
+

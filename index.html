@@ -1,24 +1,50 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: surfshop
+home: true
 
 ---
 
-<section class="home-img">
-    <!-- <header>
-        <h2>Surfshop</h2>
-    </header> -->
+    <section class="home-img">
 
-    <!-- <div class="content">
-           <ul>
-            {% for post in site.posts %}
-              <li>
-                <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-    </div> -->
+    </section>
 
-</section>
+    <section class="top-products">
+        <div class="wrapper">
+            <header>
+                    <h2>Top Products</h2>
+            </header>
+            
+            <ul>
+                <li class="products">
+                    <a href="" class="img-container">
+                        <img src="{{site.baseurl}}/img/boards.jpg" alt="boards">
+                    </a>
+                    <a href="" class="btn items">Boards</a>
+                </li>
+                <li class="products">
+                    <a href="" class="img-container">
+                        <img src="{{site.baseurl}}/img/kites.jpg" alt="kites">
+                    </a>
+                    <a href="" class="btn items">Kites</a>
+                </li>
+            </ul>
+
+            <p class="description">We enjoy the hours spent developing just as much as we like to ride.This is why we are working to get everything you need not to miss another session.</p>
+        </div>
+    </section>
+
+    <section class="our-team">
+        <div class="wrapper">
+            <header>
+                <h2>Our Team</h2>
+            </header>
+            <div class="link">
+                <a href="" class="img-container">
+                    <img src="{{site.baseurl}}/img/our-team.jpg" alt="">
+                </a>
+                <a href="" class="btn learn-more">Learn More</a>
+            </div>
+            <p class="description">The ocean is our playground, equipment is our passion, fun is our goal! </p>
+        </div>
+    </section>
