@@ -1,3 +1,8 @@
+.site {
+    height: 100vh;
+}
+
+.site,
 .site-main {
     display: flex;
     flex-direction: column;

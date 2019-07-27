@@ -42,7 +42,7 @@
           <ul class="site-nav icons">
             {% for page in site.pages %}
               {% if page.icon %}
-              <li>
+              <li{% if item.url == page.url %} class="selected"{% endif %}>
                 {% if page.icon %}
                   <a href="{{ site.baseurl }}/{{ page.url }}">
                     {% if page.icon %}<i class="fas {{ page.icon }}"></i>{% endif %}   
@@ -52,14 +52,14 @@
               {% endif %}
             {% endfor %}
           </ul>
-
+          
       </header>
-
+      <div class="spacer"></div>
       <main class="site-main">
 
-        {% if page.title %}
+        <!-- {% if page.title %}
         <h1>{{ page.title }}</h1>
-        {% endif %}
+        {% endif %} -->
 
           {{content}}
       </main>
@@ -72,7 +72,7 @@
         <div>
           <p>Susbscribe to our newsletter for all insights</p>
           <form action="post">
-              <input type="email" name="email" placeholder="Enter your email">
+              <input class="email" type="email" name="email" placeholder="Enter your email">
               <input type="submit" value="GO">
           </form>
         </div>

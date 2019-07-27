@@ -43,6 +43,7 @@
     padding-bottom: 0;
 }
 
+.site-nav li.selected > a,
 .site-nav.pages a:hover {
     border-bottom: 2px solid #144250;
 }
