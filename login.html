@@ -7,14 +7,9 @@ nomainnav: 1
 
 ---
 
-{{ page.path }}
 
 <form class="login" action="#" method="POST">
     <h3>Login</h3>
-    <ul>
-        <li{% if item.url == page.url %} class="login-selected"{% endif %}><a href="{% link login.html %}">Login</a></li>
-        <li{% if item.url == page.url %} class="login-selected"{% endif %}><a href="{% link sign-in.html %}">Create user account</a></li>
-    </ul>
     <input class="email" type="email" name="email" id="email" placeholder="Email">
     <input class="email" type="password" name="pass" id="pass" placeholder="Password">
     <div class="checkbox">
@@ -22,4 +17,5 @@ nomainnav: 1
         <label for="check">Stay Logged in</label>
         <a class="forgot" href="#">Forgot your password</a>
     </div>
+    <input class="submit" type="submit" value="Login">
 </form>

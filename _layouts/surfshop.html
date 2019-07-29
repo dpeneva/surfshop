@@ -18,18 +18,18 @@
       <header class="site-header">
           <nav class="site-nav pages">
               <ul>
-                {% for page in site.pages %}
-                {% if page.title and page.nomainnav != 1 %}
-                  <li>
-                    <a href="{{site.baseurl}}/{{ page.url }}">{{ page.title }}</a>
-                    {% if page.products %}
-                    <ul class="nav-products">
-                      <li><a href="">Boards</a></li>
-                      <li><a href="">Kites</a></li>
-                    </ul>
-                  {% endif %}
-                  </li>
-                  
+                {% assign nav = site.pages | sort:"order" %}
+                  {% for item in nav %}
+                    {% if item.title and item.nomainnav != 1 %}
+                      <li{% if item.url == page.url %} class="selected"{% endif %}>
+                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        {% if item.products %}
+                          <ul class="nav-products">
+                            <li><a href="">Boards</a></li>
+                            <li><a href="">Kites</a></li>
+                          </ul>
+                        {% endif %}
+                      </li>
                   {% endif %}
                 {% endfor %}
               </ul>
@@ -69,16 +69,16 @@
       </aside>
 
       <footer class="site-footer">
-        <div>
+        <div class="newsletter">
           <p>Susbscribe to our newsletter for all insights</p>
           <form action="post">
               <input class="email" type="email" name="email" placeholder="Enter your email">
               <input type="submit" value="GO">
           </form>
         </div>
-        <div>
+        <div class="follow-us">
           <p>Follow us</p> 
-          <ul>
+          <ul class="media">
             <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -86,10 +86,20 @@
             <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
           </ul>
         </div>
+        <div class="site-links">
+          <p>Site Links</p>
+          <ul>
+            <li><a href="">Products</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
         <div>
           
         </div>
-        <p>&copy; 2019 <a href="/">{{site.title}}</a></p>
+        <p class="copyright">&copy; 2019 <a href="/">{{site.title}}</a></p>
       </footer>
   </div>
 

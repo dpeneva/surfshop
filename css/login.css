@@ -1,12 +1,12 @@
 form.login {
-    margin: 0 auto;
+    margin: 5em auto;
 }
 
 form h3 {
     padding-left: 1.5rem;
 }
 
-form ul {
+/* form ul {
     display: flex;
     border-top: 0.5px solid rgba(0, 0, 0, 0.8);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.8);
@@ -16,17 +16,18 @@ form ul {
 form ul li {
     flex: 1 1 auto;
     padding-left: 0.5em;
-}
+} */
 
-form > a {
-    color: #000;
+form > a,
+form > a:visited {
+    color: #144250;
     text-decoration: underline;
 }
 
 input.email {
     display: block;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #144250;
     width: 300px;
     height: 40px;
     outline: none;
@@ -36,6 +37,7 @@ input.email {
 
 input::placeholder {
     font-size: 1.2em;
+    color: #144250
 }
 
 .checkbox {
@@ -50,4 +52,25 @@ input::placeholder {
 
 .forgot { 
     margin-left: 1em; 
+    color: #144250;
+}
+
+.submit {
+    border: 1px solid #144250;
+    background: #144250;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    outline: none;
+}
+
+.submit:hover,
+.submit:focus {
+    border: 1px solid #144250;
+    background: transparent;
+    color: #144250;
+    cursor: pointer;
 }
