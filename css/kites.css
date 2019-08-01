@@ -1,5 +1,5 @@
 .products-kites .top-kites.header {
-    background: url('../img/kites2.jpg') no-repeat;
+    background: url('../img/kites.jpg') no-repeat center;
     background-size: cover;
     height: 500px;
     display: flex;
