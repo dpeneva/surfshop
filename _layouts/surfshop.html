@@ -7,6 +7,7 @@
     <title>{{site.title}}</title>
     <link rel="stylesheet" href="{{site.baseurl}}/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
+    <script src="{{ site.baseurl }}/scripts/site.js"></script>
 </head>
 <body class="
     {% if page.title %}page page-{{page.title | slugify }}{% endif %}
@@ -26,7 +27,7 @@
                         {% if item.products %}
                           <ul class="nav-products">
                             <li><a href="">Boards</a></li>
-                            <li><a href="kites.html">Kites</a></li>
+                            <li><a href="{% link kites.html %}">Kites</a></li>
                           </ul>
                         {% endif %}
                       </li>
