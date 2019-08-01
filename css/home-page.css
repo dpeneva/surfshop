@@ -54,7 +54,7 @@ p.description {
     height: 700px;
 }
 
-.top-products ul {
+.top-products ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

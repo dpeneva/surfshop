@@ -14,25 +14,10 @@ order: 1
     <section class="top-products">
         <div class="wrapper">
             <header>
-                    <h2>Top Products</h2>
+                <h2>Top Products</h2>
             </header>
             
-            <ul>
-                <li class="products">
-                    <a href="" class="img-container">
-                        <img src="{{site.baseurl}}/img/boards.jpg" alt="boards">
-                    </a>
-                    <p>Boards</p>
-                    <a href="" class="btn items">See more</a>
-                </li>
-                <li class="products">
-                    <a href="" class="img-container">
-                        <img src="{{site.baseurl}}/img/kites.jpg" alt="kites">
-                    </a>
-                    <p>Kites</p>
-                    <a href="" class="btn items">See more</a>
-                </li>
-            </ul>
+            {% include top-products.html %}
 
             <p class="description">We enjoy the hours spent developing just as much as we like to ride.This is why we are working to get everything you need not to miss another session.</p>
         </div>

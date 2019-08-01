@@ -1,7 +1,7 @@
 .site-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: #144250;
     color: #FFF;
     padding: 1em;
@@ -23,7 +23,7 @@
 }
 
 .newsletter {
-    flex: 1 0 33%;
+    flex: 0 0 30%;
 }
 
 .newsletter form {
@@ -54,7 +54,7 @@
 }
 
 .follow-us {
-    flex: 1 0 33%;
+    flex: 0 0 30%;
 }
 
 .follow-us .media {
@@ -68,7 +68,7 @@
 }
 
 .site-links {
-    flex: 1 0 15%;
+    flex: 0 0 25%;
     text-align: left;
 }
 

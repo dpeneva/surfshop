@@ -6,4 +6,24 @@ products: yes
 order: 2
 ---
  
-These are our products
+<section class="top-products">
+    
+    <header class="our-products header">
+        <h2>These are our products</h2>
+    </header>
+    <div class="wrapper">
+    {% include top-products.html %}
+
+    <div class="accessories">
+        <div class="products">
+            <a href="" class="img-container">
+                <img src="{{site.baseurl}}/img/accessories.jpg" alt="accessories">
+            </a>
+            <p>Accessories</p>
+            <a href="" class="btn items">See more</a>
+        </div>
+    </div>
+    </div>
+</section>
+
+

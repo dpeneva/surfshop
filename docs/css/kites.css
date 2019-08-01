@@ -1,0 +1,35 @@
+.products-kites .top-kites.header {
+    background: url('../img/kites2.jpg') no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+  }
+
+.kites {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.kites .item {
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;   
+}
+
+
+.kites .item a {
+    display: block;
+    width: 100%;
+}
+
+.kites .item img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+
+
