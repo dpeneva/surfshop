@@ -1,0 +1,61 @@
+.surf-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .header {
+    background: url('../img/events.jpg') no-repeat center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+}
+
+.article {
+    transform: translateY(0);
+    box-shadow: 0;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+    grid-column: span 2;
+    max-width: 100%;
+}
+
+.article:hover {
+    transform: translateY(-0.3em);
+    box-shadow: 0 12px 20px -12px  rgba(38,38,62,.35)
+}
+
+.surfing {
+    margin-right: auto;
+}
+
+.ocean {
+    margin-left: auto;
+}
+
+.article a {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+}
+
+.surf-league {
+    flex: 0 0 50%;
+}
+
+.surf-league img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.article .description {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+}
+
+.video {
+    margin-top: 2em;
+}
+

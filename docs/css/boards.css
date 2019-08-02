@@ -23,7 +23,7 @@
 
 body.loaded .boards .item {
     opacity: 1;
-    animation: slidein 0.4s ease-in;
+    animation: zoomin 1s ease-in;
 }
 
 body.loaded .boards li:nth-child(1) { transition-delay: 0.2s;}
@@ -52,7 +52,7 @@ body.loaded .boards li:nth-child(6) { animation-delay: 1.2s;}
 }
 
 
-@keyframes slidein {
+@keyframes zoomin {
     0% {
         transform: scale(0);
         opacity: 0;
