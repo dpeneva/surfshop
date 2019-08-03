@@ -60,6 +60,12 @@ p.description {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+    .top-products ul {
+        flex-direction: column;
+    }
+}
+
 .top-products .products {
     flex-basis: 49%;
     position: relative;
@@ -139,3 +145,5 @@ p.description {
     color: #000;
     border: 2px solid #000;
 }
+
+

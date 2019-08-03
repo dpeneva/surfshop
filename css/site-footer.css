@@ -85,3 +85,22 @@
     flex: 1 0 100%;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .site-footer {
+        display: block;
+    }
+
+    .site-links,
+    .site-links p {
+        text-align: center;     
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter,
+    .follow-us,
+    .site-links {
+        display: none;
+    }
+}

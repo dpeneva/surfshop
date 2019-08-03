@@ -101,3 +101,18 @@
 .align-right {
   text-align: right;
 }
+
+@media screen and (max-width: 480px) {
+    .team-pictures {
+      display: none;
+    }
+
+    .team-description > div {
+      display: none;
+    } 
+
+    .team-description h3,
+    .team-description p {
+      text-align: center;
+    }
+}

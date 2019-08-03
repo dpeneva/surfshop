@@ -21,6 +21,15 @@
     transition: opacity 0.4s ease-in;
 }
 
+@media screen and (max-width: 768px) {
+    .boards {
+        justify-content: center;
+    }
+    .boards .item {
+        flex-basis: 40%;
+    }
+}
+
 body.loaded .boards .item {
     opacity: 1;
     animation: zoomin 1s ease-in;
