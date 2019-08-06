@@ -10,6 +10,9 @@
 .boards {
     display: flex;
     flex-wrap: wrap; 
+    @include bp(tablet) {
+        justify-content: center;
+    }
 }
 
 .boards .item {
@@ -19,20 +22,14 @@
     margin: 1em;   
     opacity: 0;
     transition: opacity 0.4s ease-in;
+    @include bp(tablet) {
+        flex-basis: 40%;
+    }
 }
 
 .boards .item .cart,
 .boards .item .favourite {
     flex-basis: 50%;
-}
-
-@media screen and (max-width: 768px) {
-    .boards {
-        justify-content: center;
-    }
-    .boards .item {
-        flex-basis: 40%;
-    }
 }
 
 body.loaded .boards .item {

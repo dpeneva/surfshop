@@ -10,42 +10,28 @@
 html {
     font: 12px/1.5 'Darker Grotesque', serif;
     box-sizing: border-box;
-}
 
-
-/* 1600px, 1024px, 960px, 768px, 640px, 480px, 320px. */
-@media screen and (min-width: 480px) {
-    html {
+    @include bp(smartphone) {
         font-size: 13px;
     }
-}
 
-@media screen and (min-width: 640px) {
-    html {
+    @include bp(mobile) {
         font-size: 14px;
     }
-}
 
-@media screen and (min-width: 768px) {
-    html {
+    @include bp(tablet) {
         font-size: 15px;
     }
-}
 
-@media screen and (min-width: 960px) {
-    html {
+    @include bp(laptop) {
         font-size: 16px;
     }
-}
 
-@media (min-width: 1024px) {
-    html {
+    @include bp(desktop) {
         font-size: 18px;
     }
-}
 
-@media (min-width: 1600px) {
-    html {
+    @include bp(desktop-large) {
         font-size: 20px;
     }
 }

@@ -1,0 +1,20 @@
+@mixin bp($point) {
+    @if $point == desktop-large {
+      @media (min-width: 1600px) { @content; }
+    }
+    @else if $point == desktop {
+      @media (min-width: 1024px) { @content; }
+    }
+    @else if $point == laptop {
+      @media (min-width: 960px) { @content; }
+    }
+    @else if $point == tablet {
+      @media (min-width: 768px) { @content; }
+    }
+    @else if $point == mobile {
+        @media (min-width: 640px) { @content; }
+      }
+    @else if $point == smartphone {
+        @media (min-width: 480px) { @content; }
+    }
+  }
