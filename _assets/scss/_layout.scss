@@ -1,13 +1,12 @@
 .site {
     height: 100vh;
+
+    &,
+    &-main {
+        display: flex;
+        flex-direction: column;
+    } 
 }
-
-
-.site,
-.site-main {
-    display: flex;
-    flex-direction: column;
-} 
 
 .wrapper {
     max-width: 60em;

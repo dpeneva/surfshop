@@ -10,31 +10,45 @@
 html {
     font: 12px/1.5 'Darker Grotesque', serif;
     box-sizing: border-box;
+}
 
-    @include bp(smartphone) {
+/* 1600px, 1024px, 960px, 768px, 640px, 480px, 320px. */
+@media screen and (min-width: 480px) {
+    html {
         font-size: 13px;
     }
+}
 
-    @include bp(mobile) {
+@media screen and (min-width: 640px) {
+    html {
         font-size: 14px;
     }
+}
 
-    @include bp(tablet) {
+@media screen and (min-width: 768px) {
+    html {
         font-size: 15px;
     }
+}
 
-    @include bp(laptop) {
+@media screen and (min-width: 960px) {
+    html {
         font-size: 16px;
     }
+}
 
-    @include bp(desktop) {
+@media (min-width: 1024px) {
+    html {
         font-size: 18px;
     }
+}
 
-    @include bp(desktop-large) {
+@media (min-width: 1600px) {
+    html {
         font-size: 20px;
     }
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em;

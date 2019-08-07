@@ -5,10 +5,10 @@
   display: flex;
   align-items: center;  
   justify-content: center;
-}
 
-.our-team .header h2 {
-  color: #FFF;
+  & h2 {
+    color: #FFF;
+  }
 }
 
 .team {
@@ -18,82 +18,82 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
   grid-auto-flow: dense;
-}
 
-.team li {
-  position: relative;
-  overflow: hidden;
-}
+  & li {
+      position: relative;
+      overflow: hidden;
 
-.team li::before {
-  display: block;
-  content: '';
-  padding-top: 50%;
-}
+    &::before {
+      display: block;
+      content: '';
+      padding-top: 50%;
+    }
 
-.team li a {
-  display: flex;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-}
+    &:hover img {
+      transform: scale(1.2);
+    }
 
-.team li.portrait {
-  grid-column: span 1;
-  grid-row: span 2;
-}
+    & a {
+      display: flex;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
 
-.team li.portrait::before {
-  padding-top: 100%;
-}
+    &.portrait {
+      grid-column: span 1;
+      grid-row: span 2;
 
-.team span {
-  display:block;
-  position:absolute;
-  bottom: 0; left: 0;
-  z-index: 2;
-  width:50%;
-  color:white;
-  padding:20px;
-  background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
-}
+      &::before {
+        padding-top: 100%;
+      }
+    }
+  }
 
-.team img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transform: scale(1);
-  transition: transform 0.2s linear;
-}
+  & span {
+    display:block;
+    position:absolute;
+    bottom: 0; left: 0;
+    z-index: 2;
+    width:50%;
+    color:white;
+    padding:20px;
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+  }
 
-.team li:hover img {
-  transform: scale(1.2);
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.2s linear;
+  }
 }
 
 .team-description {
   max-width: 60rem;
   margin: 1rem auto;
   height: 400px;
-}
 
-.team-description .left {
-  float: left;
-  padding-right: 2rem;
-}
+  & .left {
+    float: left;
+    padding-right: 2rem;
+  }
 
-.team-description .right {
-  float: right;
-  padding-left: 2rem;
+  & .right {
+    float: right;
+    padding-left: 2rem;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .clear {
   display: block;
   content: '';
   clear: both;
-}
-
-.team-description img {
-  display: block;
-  width: 100%;
 }
 
 .align-right {

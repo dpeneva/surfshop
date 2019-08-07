@@ -23,29 +23,8 @@ p.description {
     transition: opacity 0.3s ease-in;
 }
 
- .img-container:hover:after {
+.img-container:hover:after {
     opacity: 0;
-}
-
-.btn {
-    color: #FFF;
-    border: 2px solid #FFF;
-    font-weight: 900;
-    font-size: 1.2em;
-    padding: 0.3em 0.5em;
-    border-radius: 0.2em;
-    /* box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7) inset; */
-    opacity: 0;
-    transition: color 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in, opacity 0.3s ease-in;
-}
-
-.products:hover .btn,
-.link:hover .btn.learn-more {
-    opacity: 1;
-    display: block;
-    color: #FFF;
-    border: 2px solid #FFF;
-    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7) inset; */
 }
 
 .home-img {
@@ -58,10 +37,8 @@ p.description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-@media screen and (max-width: 768px) {
-    .top-products ul {
+    @include bp(tablet) {
         flex-direction: column;
     }
 }
@@ -95,14 +72,6 @@ p.description {
     top: 35%;
 }
 
-
-.btn.items {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
 .our-team .img-container {
     display: block;
     content: '';
@@ -110,6 +79,22 @@ p.description {
 
 .link {
     position: relative;
+
+    & p {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%); 
+        transition: top 0.3s ease-in;
+        z-index: 5;
+        font-size: 2em;
+        font-weight: 900;
+        color: #000;
+    }
+
+    &:hover p {
+        top: 100px;
+    }
 }
 
 .our-team img {
@@ -117,33 +102,5 @@ p.description {
     width: 100%;
 } 
 
-.link p {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%); 
-    transition: top 0.3s ease-in;
-    z-index: 5;
-    font-size: 2em;
-    font-weight: 900;
-    color: #000;
-}
-
-.link:hover p {
-    top: 100px;
-}
-
-.btn.learn-more {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-
-.link:hover .btn.learn-more {
-    color: #000;
-    border: 2px solid #000;
-}
 
 

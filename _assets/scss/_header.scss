@@ -13,34 +13,25 @@
 .site-title {
     flex-grow: 1;
     margin-bottom: 0;
-}
 
-@media screen and (max-width: 480px) {
-    .site-title {
+    @include bp(smartphone) {
         font-size: 1.5em;
     }
-}
 
-.site-title a {
-   color: #144250;
-   text-transform: uppercase;
-   font-weight: 700;
-   text-shadow: 1px 1px 5px rgba(0,0,0,0.5)
-}
+    & a {
+        color: #144250;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 
-.site-title a:before {
-    display: inline-block;
-    content: '\f773';
-    font-weight: 900;
-    font-family: 'Font Awesome 5 Free';
-    font-size: 0.6em;
-    padding-right: 0.5em;
-    color: #144250  ;
-}
-
-.spacer {
-    display: block;
-    content: '';
-    height: 75px;
-    width: 100%;
+        &:before {
+            display: inline-block;
+            content: '\f773';
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            font-size: 0.6em;
+            padding-right: 0.5em;
+            color: #144250  ;
+        }
+    }
 }

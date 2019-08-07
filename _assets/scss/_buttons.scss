@@ -1,0 +1,40 @@
+.btn {
+    color: #FFF;
+    border: 2px solid #FFF;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding: 0.3em 0.5em;
+    border-radius: 0.2em;
+    /* box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7) inset; */
+    opacity: 0;
+    transition: color 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.products:hover .btn,
+.link:hover .btn.learn-more {
+    opacity: 1;
+    display: block;
+    color: #FFF;
+    border: 2px solid #FFF;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7) inset; */
+}
+
+.btn.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.btn.learn-more {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.link:hover .btn.learn-more {
+    color: #000;
+    border: 2px solid #000;
+}

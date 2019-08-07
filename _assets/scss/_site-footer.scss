@@ -5,80 +5,80 @@
     background: #144250;
     color: #FFF;
     padding: 1em;
-}
 
-.site-footer p {
-    font-size: 1.3em;
-    text-align: center;
-}
+    & p {
+        font-size: 1.3em;
+        text-align: center;
+    }
 
-.site-footer a {
-    color: #FFF;
-}
+    & a {
+        color: #FFF;
 
-.site-footer a:hover,
-.site-footer a:focus {
-    cursor: pointer;
-    color: #F1A168;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: #F1A168;
+        }
+    }
 }
 
 .newsletter {
     flex: 0 0 30%;
-}
 
-.newsletter form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    & form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    & input {
+        margin: 0;
+        border: 0;
+    }
 
-.newsletter input {
-    margin: 0;
-    border: 0;
-}
+    & input[type="submit"] {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background: #F1A168;
+        color: #144250;
+        font-weight: 900;
+        letter-spacing: 1.5px;
 
-.newsletter input[type="submit"] {
-    width: 40px;
-    height: 40px;
-    border: 0;
-    background: #F1A168;
-    color: #144250;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-}
-
-.newsletter input[type="submit"]:hover,
-.newsletter input[type="submit"]:focus {
-    cursor: pointer;
-    color: #FFF;
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        color: #FFF;
+        }
+    } 
 }
 
 .follow-us {
     flex: 0 0 30%;
-}
 
-.follow-us .media {
-    display: flex;
-    justify-content: center;
-}
+    & .media {
+        display: flex;
+        justify-content: center;
 
-.follow-us .media li {
-    font-size: 1.5em;
-    padding: 0.3em;
+        & li {
+            font-size: 1.5em;
+            padding: 0.3em;
+        }
+    }
 }
 
 .site-links {
     flex: 0 0 25%;
     text-align: left;
-}
 
-.site-links p {
-    text-align: left;
-}
+    & p {
+        text-align: left;
+    }
 
-.site-links a:hover,
-.site-links a:focus {
-    text-decoration: underline;
+    & a:hover,
+    & a:focus {
+        text-decoration: underline;
+    }
 }
 
 .copyright {
