@@ -2,24 +2,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.contact-us h2 {
-    flex: 1 0 100%;
+    & h2 {
+        flex: 1 0 100%;
+    }
 }
 
 textarea {
     padding-left: 1.5rem;
     width: 300px;
-}
 
-textarea::placeholder {
-    font-size: 1.2em;
-    color: #144250
-}
+    &::placeholder {
+        font-size: 1.2em;
+        color: #144250
+    }
 
-textarea:focus {
-    border-color: #144250;
+    &:focus {
+        border-color: #144250;
+    }
 }
 
 .address {

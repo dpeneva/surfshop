@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{site.title}}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-    <script src="{{ site.baseurl }}/scripts/site.js"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
+    <script src="{{site.baseurl}}/scripts/site.js"></script>
 </head>
 <body class="
     {% if page.title %}page page-{{page.title | slugify }}{% endif %}
@@ -28,11 +28,11 @@
                   {% for item in nav %}
                     {% if item.title and item.nomainnav != 1 %}
                       <li{% if item.url == page.url %} class="selected"{% endif %}>
-                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        <a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a>
                         {% if item.products %}
                           <ul class="nav-products">
-                            <li><a href="{{ site.baseurl }}/products/boards">Boards</a></li>
-                            <li><a href="{{ site.baseurl }}/products/kites">Kites</a></li>
+                            <li><a href="{{site.baseurl}}/products/boards.html">Boards</a></li>
+                            <li><a href="{{site.baseurl}}/products/kites.html">Kites</a></li>
                           </ul>
                         {% endif %}
                       </li>
@@ -50,7 +50,7 @@
               {% if page.icon %}
               <li{% if item.url == page.url %} class="selected"{% endif %}>
                 {% if page.icon %}
-                  <a href="{{ site.baseurl }}/{{ page.url }}">
+                  <a href="{{site.baseurl}}/{{ page.url }}">
                     {% if page.icon %}<i class="fas {{ page.icon }}"></i>{% endif %}   
                   </a>
                 {% endif %}
@@ -60,14 +60,11 @@
           </ul>
           
       </header>
-      <div class="spacer"></div>
+
       <main class="site-main">
 
-        <!-- {% if page.title %}
-        <h1>{{ page.title }}</h1>
-        {% endif %} -->
-
           {{content}}
+
       </main>
 
       <footer class="site-footer">
@@ -91,16 +88,16 @@
         <div class="site-links">
           <p>Site Links</p>
           <ul>
-            <li><a href="{{ site.baseurl }}/products/">Products</a></li>
-            <li><a href="{{ site.baseurl }}/team/">Team</a></li>
-            <li><a href="{{ site.baseurl }}/events/">Events</a></li>
-            <li><a href="{{ site.baseurl }}/contacts/">Contacts</a></li>
+            <li><a href="{{site.baseurl}}/products/">Products</a></li>
+            <li><a href="{{site.baseurl}}/team/">Team</a></li>
+            <li><a href="{{site.baseurl}}/events/">Events</a></li>
+            <li><a href="{{site.baseurl}}/contacts/">Contacts</a></li>
           </ul>
         </div>
         <div>
           
         </div>
-        <p class="copyright">&copy; 2019 <a href="/">{{site.title}}</a></p>
+        <p class="copyright">&copy; 2019 <a href="{{site.baseurl}}">{{site.title}}</a></p>
       </footer>
   </div>
 

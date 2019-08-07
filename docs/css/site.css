@@ -430,8 +430,7 @@ p.description {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
-  grid-auto-flow: dense;
-  /* max-width: 50rem; */ }
+  grid-auto-flow: dense; }
 
 .team li {
   position: relative;
@@ -481,7 +480,6 @@ p.description {
 
 .team-description {
   max-width: 60rem;
-  height: 250px;
   margin: 1rem auto; }
 
 .team-description .left {
@@ -507,8 +505,14 @@ p.description {
 @media screen and (max-width: 480px) {
   .team-pictures {
     display: none; }
-  .team-description > div {
-    display: none; }
+  .team-description img {
+    width: 50%;
+    margin: 0 auto; }
+  .team-description .right,
+  .team-description .left {
+    display: block;
+    float: none;
+    padding: 0; }
   .team-description h3,
   .team-description p {
     text-align: center; } }
@@ -532,35 +536,26 @@ p.description {
 .kites {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 2em; }
-
-.kites .item {
-  flex-basis: 29%;
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  opacity: 0;
-  transition: opacity 0.4s ease-in; }
-
-@media screen and (max-width: 768px) {
-  .kites {
-    justify-content: center; }
+  padding-top: 2em;
+  justify-content: center; }
   .kites .item {
-    flex-basis: 40%; } }
-
-.kites .item a {
-  display: block;
-  width: 100%; }
-
-.kites .item img {
-  display: block;
-  height: auto;
-  width: 100%; }
-
-body.loaded .kites .item {
-  opacity: 1;
-  -webkit-animation: zoomin 1s ease-in;
-          animation: zoomin 1s ease-in; }
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    opacity: 0;
+    transition: opacity 0.4s ease-in; }
+    .kites .item a {
+      display: block;
+      width: 100%; }
+    .kites .item img {
+      display: block;
+      height: auto;
+      width: 100%; }
+    body.loaded .kites .item {
+      opacity: 1;
+      -webkit-animation: zoomin 1s ease-in;
+              animation: zoomin 1s ease-in; }
 
 body.loaded .kites li:nth-child(1) {
   transition-delay: 0.2s; }
@@ -634,30 +629,29 @@ body.loaded .kites li:nth-child(6) {
 
 .boards {
   display: flex;
-  flex-wrap: wrap; }
-  @media (min-width: 768px) {
-    .boards {
-      justify-content: center; } }
-
-.boards .item {
-  flex-basis: 29%;
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  opacity: 0;
-  transition: opacity 0.4s ease-in; }
-  @media (min-width: 768px) {
-    .boards .item {
-      flex-basis: 40%; } }
-
-.boards .item .cart,
-.boards .item .favourite {
-  flex-basis: 50%; }
-
-body.loaded .boards .item {
-  opacity: 1;
-  -webkit-animation: zoomin 1s ease-in;
-          animation: zoomin 1s ease-in; }
+  flex-wrap: wrap;
+  justify-content: center; }
+  .boards .item {
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    opacity: 0;
+    transition: opacity 0.4s ease-in; }
+    .boards .item a {
+      display: block;
+      width: 100%; }
+    .boards .item img {
+      display: block;
+      height: auto;
+      width: 100%; }
+    .boards .item .cart,
+    .boards .item .favourite {
+      flex-basis: 50%; }
+    body.loaded .boards .item {
+      opacity: 1;
+      -webkit-animation: zoomin 1s ease-in;
+              animation: zoomin 1s ease-in; }
 
 body.loaded .boards li:nth-child(1) {
   transition-delay: 0.2s; }
@@ -701,15 +695,6 @@ body.loaded .boards li:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s; }
 
-.boards .item a {
-  display: block;
-  width: 100%; }
-
-.boards .item img {
-  display: block;
-  height: auto;
-  width: 100%; }
-
 @keyframes zoomin {
   0% {
     transform: scale(0);
@@ -723,36 +708,32 @@ body.loaded .boards li:nth-child(6) {
 .add {
   display: flex;
   margin-top: auto; }
-
-.add .cart,
-.add .favourite {
-  flex: 1 1 auto;
-  background: #144250;
-  color: #FFF;
-  height: 40px;
-  border: 1px solid #FFF;
-  outline: none; }
-
-.add .cart:hover,
-.add .cart:focus,
-.add .favourite:hover,
-.add .favourite:focus {
-  cursor: pointer;
-  background: #FFF;
-  color: #144250;
-  border-color: #144250; }
-
-.add .cart::before {
-  display: block;
-  content: '\f07a';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; }
-
-.add .favourite::before {
-  display: block;
-  content: '\f004';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; }
+  .add .cart,
+  .add .favourite {
+    flex: 1 1 auto;
+    background: #144250;
+    color: #FFF;
+    height: 40px;
+    border: 1px solid #FFF;
+    outline: none; }
+  .add.cart:hover,
+  .add .cart:focus,
+  .add .favourite:hover,
+  .add .favourite:focus {
+    cursor: pointer;
+    background: #FFF;
+    color: #144250;
+    border-color: #144250; }
+  .add .cart::before {
+    display: block;
+    content: '\f07a';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; }
+  .add .favourite::before {
+    display: block;
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; }
 
 .surf-events {
   display: flex;
@@ -961,36 +942,29 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-
-.contact-us h2 {
-  flex: 1 0 100%; }
+  .contact-us h2 {
+    flex: 1 0 100%; }
 
 textarea {
   padding-left: 1.5rem;
   width: 300px; }
-
-textarea::-webkit-input-placeholder {
-  font-size: 1.2em;
-  color: #144250; }
-
-textarea::-moz-placeholder {
-  font-size: 1.2em;
-  color: #144250; }
-
-textarea:-ms-input-placeholder {
-  font-size: 1.2em;
-  color: #144250; }
-
-textarea::-ms-input-placeholder {
-  font-size: 1.2em;
-  color: #144250; }
-
-textarea::placeholder {
-  font-size: 1.2em;
-  color: #144250; }
-
-textarea:focus {
-  border-color: #144250; }
+  textarea::-webkit-input-placeholder {
+    font-size: 1.2em;
+    color: #144250; }
+  textarea::-moz-placeholder {
+    font-size: 1.2em;
+    color: #144250; }
+  textarea:-ms-input-placeholder {
+    font-size: 1.2em;
+    color: #144250; }
+  textarea::-ms-input-placeholder {
+    font-size: 1.2em;
+    color: #144250; }
+  textarea::placeholder {
+    font-size: 1.2em;
+    color: #144250; }
+  textarea:focus {
+    border-color: #144250; }
 
 .address {
   margin-right: 3em; }
