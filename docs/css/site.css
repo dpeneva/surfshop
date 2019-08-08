@@ -64,6 +64,9 @@ p, ul, ol {
 
 .site {
   height: 100vh; }
+  @media (max-width: 768px) {
+    .site {
+      height: 90vh; } }
   .site, .site-main {
     display: flex;
     flex-direction: column; }
@@ -131,10 +134,10 @@ section {
   padding: 0; }
 
 .site-nav li {
-  display: flex;
   padding: 0 0.5em;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   float: left; }
   .site-nav li:hover .nav-products {
@@ -162,8 +165,8 @@ section {
 
 .site-nav a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 0.7em 0.7em;
   color: #000;
   font-weight: 600;
@@ -305,7 +308,7 @@ p.description {
 .home-img {
   background: url("../img/home-img.jpg") no-repeat center;
   background-size: cover;
-  height: 700px; }
+  height: 300px; }
 
 .top-products ul {
   display: flex;
@@ -343,6 +346,8 @@ p.description {
 .our-team .img-container {
   display: block;
   content: ''; }
+  .our-team .img-container::after {
+    border-radius: 0.2em; }
 
 .link {
   position: relative; }
@@ -361,7 +366,8 @@ p.description {
 
 .our-team img {
   display: block;
-  width: 100%; }
+  width: 100%;
+  border-radius: 0.2em; }
 
 .btn {
   color: #FFF;
@@ -370,7 +376,6 @@ p.description {
   font-size: 1.2em;
   padding: 0.3em 0.5em;
   border-radius: 0.2em;
-  /* box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7) inset; */
   opacity: 0;
   transition: color 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in, opacity 0.3s ease-in; }
 
@@ -379,8 +384,7 @@ p.description {
   opacity: 1;
   display: block;
   color: #FFF;
-  border: 2px solid #FFF;
-  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7) inset; */ }
+  border: 2px solid #FFF; }
 
 .btn.items {
   position: absolute;
@@ -401,7 +405,7 @@ p.description {
 .our-team .header {
   background: url("../img/team.jpg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -493,7 +497,7 @@ p.description {
 .top-products .our-products.header {
   background: url("../img/products.jpg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -501,7 +505,7 @@ p.description {
 .products-kites .top-kites.header {
   background: url("../img/kites.jpg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -595,7 +599,7 @@ body.loaded .kites li:nth-child(6) {
 .products-boards .top-boards.header {
   background: url("../img/boards.jpg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -668,16 +672,6 @@ body.loaded .boards li:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s; }
 
-@keyframes zoomin {
-  0% {
-    transform: scale(0);
-    opacity: 0; }
-  50% {
-    transform: scale(1.2); }
-  100% {
-    transform: translateX(1);
-    opacity: 1; } }
-
 .add {
   display: flex;
   margin-top: auto; }
@@ -716,7 +710,7 @@ body.loaded .boards li:nth-child(6) {
 .events .header {
   background: url("../img/events.jpg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }

@@ -1,20 +1,33 @@
 @mixin bp($point) {
-    @if $point == desktop-large {
-      @media (max-width: 1600px) { @content; }
-    }
-    @else if $point == desktop {
-      @media (max-width: 1024px) { @content; }
-    }
-    @else if $point == laptop {
-      @media (max-width: 960px) { @content; }
-    }
-    @else if $point == tablet {
-      @media (max-width: 768px) { @content; }
-    }
-    @else if $point == mobile {
-        @media (max-width: 640px) { @content; }
-      }
-    @else if $point == smartphone {
-        @media (max-width: 480px) { @content; }
-    }
+
+  @if $point == desktop-large {
+    @media (max-width: 1600px) { @content; }
   }
+
+  @else if $point == desktop {
+    @media (max-width: 1024px) { @content; }
+  }
+
+  @else if $point == laptop {
+    @media (max-width: 960px) { @content; }
+  }
+
+  @else if $point == tablet {
+    @media (max-width: 768px) { @content; }
+  }
+
+  @else if $point == mobile {
+    @media (max-width: 640px) { @content; }
+    }
+
+  @else if $point == smartphone {
+    @media (max-width: 480px) { @content; }
+  }
+}
+
+
+@mixin display($flex) {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}

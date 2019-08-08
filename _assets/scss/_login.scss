@@ -9,7 +9,7 @@ form h3 {
 
 form > a,
 form > a:visited {
-    color: #144250;
+    color: $base-text-color;
     text-decoration: underline;
 }
 
@@ -17,7 +17,7 @@ input.email,
 input.name {
     display: block;
     border: none;
-    border-bottom: 1px solid #144250;
+    border-bottom: 1px solid $base-text-color;
     width: 300px;
     height: 40px;
     outline: none;
@@ -27,7 +27,7 @@ input.name {
 
 input::placeholder {
     font-size: 1.2em;
-    color: #144250
+    color: $base-text-color;
 }
 
 .checkbox {
@@ -42,13 +42,13 @@ input::placeholder {
 
 .forgot { 
     margin-left: 1em; 
-    color: #144250;
+    color: $base-text-color;
 }
 
 .submit {
-    border: 1px solid #144250;
-    background: #144250;
-    color: #FFF;
+    border: 1px solid $base-text-color;
+    background: $base-text-color;
+    color: $secondary-text-color;
     text-transform: uppercase;
     font-weight: 900;
     padding: 0.5em 1.2em;
@@ -59,8 +59,8 @@ input::placeholder {
 
 .submit:hover,
 .submit:focus {
-    border: 1px solid #144250;
+    border: 1px solid $base-text-color;
     background: transparent;
-    color: #144250;
+    color: $base-text-color;
     cursor: pointer;
 }

@@ -1,11 +1,9 @@
 .products-boards .top-boards.header {
     background: url('../img/boards.jpg') no-repeat center;
     background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-  }
+    height: $page-header-hight;
+    @include display(flex);
+ }
 
 .boards {
     display: flex;
@@ -55,23 +53,6 @@
     }
 }
 
-
-@keyframes zoomin {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: translateX(1);
-        opacity: 1;
-    }
-}
-
 .add {
     display: flex;
     margin-top: auto;
@@ -79,10 +60,10 @@
     & .cart,
     & .favourite {
         flex: 1 1 auto;
-        background: #144250;
-        color: #FFF;
+        background: $base-text-color;
+        color: $secondary-text-color;
         height: 40px;
-        border: 1px solid #FFF;
+        border: 1px solid $secondary-text-color;
         outline: none;
     }
 
@@ -91,9 +72,9 @@
     & .favourite:hover,
     & .favourite:focus {
         cursor: pointer;
-        background: #FFF;
-        color: #144250;
-        border-color: #144250;
+        background: $secondary-text-color;
+        color: $base-text-color;
+        border-color: $base-text-color;
     }
     
     & .cart::before {
@@ -110,6 +91,3 @@
         font-weight: 900;
     }
 }
-
-
-

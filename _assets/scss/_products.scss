@@ -1,10 +1,8 @@
 .top-products .our-products.header {
     background: url('../img/products.jpg') no-repeat center;
     background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
+    height: $page-header-hight;
+    @include display(flex);
   }
   
   

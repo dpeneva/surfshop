@@ -14,11 +14,11 @@ textarea {
 
     &::placeholder {
         font-size: 1.2em;
-        color: #144250
+        color: $base-text-color;
     }
 
     &:focus {
-        border-color: #144250;
+        border-color: $base-text-color;
     }
 }
 

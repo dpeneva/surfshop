@@ -1,5 +1,8 @@
 .site {
     height: 100vh;
+    @include bp(tablet) {
+        height: 90vh;
+    }
 
     &,
     &-main {
@@ -15,7 +18,7 @@
 }
 
 .header h2 {
-    color: #FFF;
+    color: $secondary-text-color;
   }
 
 a,

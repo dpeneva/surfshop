@@ -1,13 +1,13 @@
 h2 {
     text-align: center;
-    color: #144250;
+    color: $base-text-color;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 p.description {
     font-size: 2em;
-    color: #144250;
+    color: $base-text-color;
     margin: 0 auto;
     text-align: center;
 }
@@ -30,7 +30,7 @@ p.description {
 .home-img {
     background: url('../img/home-img.jpg') no-repeat center;
     background-size: cover;
-    height: 700px;
+    height: $page-header-hight;
 }
 
 .top-products ul{
@@ -65,7 +65,7 @@ p.description {
     z-index: 5;
     font-size: 1.7em;
     font-weight: 900;
-    color: #FFF;
+    color: $secondary-text-color;
 }
 
 .products:hover p {
@@ -75,6 +75,10 @@ p.description {
 .our-team .img-container {
     display: block;
     content: '';
+
+    &::after {
+        border-radius: 0.2em;
+    }
 }
 
 .link {
@@ -100,6 +104,7 @@ p.description {
 .our-team img {
     display: block;
     width: 100%;
+    border-radius: 0.2em;
 } 
 
 
