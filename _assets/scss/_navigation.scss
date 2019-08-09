@@ -15,6 +15,8 @@
             opacity: 1;
             pointer-events: all;
             transform: translate(0);
+            @include bp(laptop) {
+            }
         }
     }
 
@@ -32,6 +34,9 @@
         & a {
             font-size: 0.9em;
             border-radius: 50%;
+            @include bp(laptop) {
+                font-size: 1.8em;
+            }
 
             &:hover {
                 background: $base-text-color;
@@ -57,10 +62,13 @@
         outline: none;
     }
 
-    & li.selected > a,
-    &.pages a:hover,
-    &.pages a:focus {
-        border-bottom: 2px solid $base-text-color;
+
+    @media screen and (min-width: 960px) {
+        & li.selected > a,
+        &.pages a:hover,
+        &.pages a:focus {
+            border-bottom: 2px solid $base-text-color;
+        }
     }
 
     & .nav-products {
@@ -73,12 +81,31 @@
         top: 100%; left: -10px;
         z-index: 200;
         padding: 0.5em;
+        @include bp(laptop) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 1;
+            pointer-events: all;
+            transition: none;
+            transform: none;
+            position: static; 
+        }
 
         & li {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             width: 5rem;
             margin: 0.2em;
             padding-bottom: 0.5em;
+            @include bp(laptop) {
+                background: none;
+            }
+
+            & a {
+                @include bp(laptop) {
+                    font-size: 2em;
+                }
+            }
         }
     }
 }
@@ -146,6 +173,7 @@
     .site-nav.pages > ul > li > a {
         display: block;
         text-align: center;
+        font-size: 2.2em;
     }
 
     .nav-toggle:checked + .site-header {

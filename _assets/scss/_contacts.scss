@@ -8,9 +8,15 @@
     }
 }
 
+input.email.contacts,
+input.name.contacts {
+    border: 1px solid $base-text-color;
+} 
+
 textarea {
     padding-left: 1.5rem;
     width: 300px;
+    border-color: $base-text-color;
 
     &::placeholder {
         font-size: 1.2em;
@@ -18,8 +24,13 @@ textarea {
     }
 
     &:focus {
-        border-color: $base-text-color;
+        border-color: $link-hover-color;
     }
+}
+
+.submit.message {
+    display: block;
+    margin-top: 1em;
 }
 
 .address {

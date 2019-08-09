@@ -17,7 +17,7 @@ p.description {
     display: block;
     content: '';
     top:0; left: 0; right: 0; bottom: 0;
-    background: rgba(20,66,80, 0.5);
+    background: rgba(20,66,80, 0.6);
     z-index: 2;
     opacity: 1;
     transition: opacity 0.3s ease-in;
@@ -63,13 +63,14 @@ p.description {
     transform: translate(-50%, -50%); 
     transition: top 0.3s ease-in;
     z-index: 5;
-    font-size: 1.7em;
-    font-weight: 900;
+    font-size: 2.2em;
+    font-weight: 100;
     color: $secondary-text-color;
 }
 
 .products:hover p {
     top: 35%;
+    pointer-events: none;
 }
 
 .our-team .img-container {
@@ -98,6 +99,7 @@ p.description {
 
     &:hover p {
         top: 100px;
+        pointer-events: none;
     }
 }
 
