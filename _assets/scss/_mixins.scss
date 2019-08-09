@@ -31,3 +31,8 @@
   align-items: center;  
   justify-content: center;
 }
+
+@mixin font($icons) {
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+}

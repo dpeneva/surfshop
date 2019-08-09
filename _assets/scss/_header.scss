@@ -27,8 +27,7 @@
         &:before {
             display: inline-block;
             content: '\f773';
-            font-weight: 900;
-            font-family: 'Font Awesome 5 Free';
+            @include font(icons);
             font-size: 0.6em;
             padding-right: 0.5em;
             color: $base-text-color;

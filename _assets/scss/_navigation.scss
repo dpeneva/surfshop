@@ -99,16 +99,14 @@
     & .open:after {
         display: block;
         content: '\f13a';
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        @include font(icons);
         font-size: 1.5em;
     }
 
     & .close:after {
         display: block;
         content: '\f057';
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        @include font(icons);
         font-size: 1.5em;
     }
 }
