@@ -11,6 +11,10 @@
 input.email.contacts,
 input.name.contacts {
     border: 1px solid $base-text-color;
+    &:focus,
+    &:hover {
+        border-color: $link-hover-color;
+    }
 } 
 
 textarea {
@@ -23,7 +27,8 @@ textarea {
         color: $base-text-color;
     }
 
-    &:focus {
+    &:focus,
+    &:hover {
         border-color: $link-hover-color;
     }
 }
