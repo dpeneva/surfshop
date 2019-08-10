@@ -34,9 +34,7 @@
         & a {
             font-size: 0.9em;
             border-radius: 50%;
-            @include bp(laptop) {
-                font-size: 1.8em;
-            }
+            
 
             &:hover {
                 background: $base-text-color;
@@ -209,6 +207,12 @@
         justify-content: center;
     }
 
+    .nav-toggle:checked + .site-header .site-nav.icons a {
+        @include bp(laptop) {
+            font-size: 1.8em;
+        }
+    }
+
     .nav-toggle:checked + .site-header .nav-toggle-button {
         flex: 1 0 100%; 
     }
@@ -222,5 +226,5 @@
         position: absolute;
         top: 15px;
         left: 10px;
-    }
+    }    
 }

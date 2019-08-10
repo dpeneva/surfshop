@@ -154,9 +154,6 @@ section {
   .site-nav.icons a {
     font-size: 0.9em;
     border-radius: 50%; }
-    @media (max-width: 960px) {
-      .site-nav.icons a {
-        font-size: 1.8em; } }
     .site-nav.icons a:hover {
       background: #144250;
       color: #FFF;
@@ -284,7 +281,13 @@ section {
     background: transparent; }
   .nav-toggle:checked + .site-header .site-nav.icons {
     flex: 1 0 100%;
-    justify-content: center; }
+    justify-content: center; } }
+
+@media (max-width: 960px) and (max-width: 960px) {
+  .nav-toggle:checked + .site-header .site-nav.icons a {
+    font-size: 1.8em; } }
+
+@media (max-width: 960px) {
   .nav-toggle:checked + .site-header .nav-toggle-button {
     flex: 1 0 100%; }
   .nav-toggle:checked + .site-header .nav-toggle-button .open:after {
@@ -391,13 +394,13 @@ p.description {
   width: 100%;
   border-radius: 0.2em; }
 
-.events .wrapper {
+.surfing-events .wrapper {
   display: flex; }
-  .events .wrapper .article a {
+  .surfing-events .wrapper .article a {
     display: flex;
     flex-direction: column; }
 
-.events .surf-league .description {
+.surfing-events .surf-league .description {
   padding-top: 2em; }
 
 .btn {
@@ -975,12 +978,19 @@ textarea {
   padding: 1em;
   border: 1px solid #144250; }
 
+h3 {
+  color: #144250; }
+
 .product-image {
   height: 200px; }
   .product-image img {
     display: block;
     height: 100%;
-    width: auto; }
+    width: auto;
+    margin-right: 2em; }
+
+.product-description {
+  padding-left: 2em; }
 
 .size {
   display: block;
