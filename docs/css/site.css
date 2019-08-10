@@ -397,6 +397,9 @@ p.description {
     display: flex;
     flex-direction: column; }
 
+.events .surf-league .description {
+  padding-top: 2em; }
+
 .btn {
   color: #FFF;
   border: 2px solid #FFF;
@@ -429,6 +432,24 @@ p.description {
 .link:hover .btn.learn-more {
   color: #000;
   border: 2px solid #000; }
+
+.submit {
+  border: 1px solid #144250;
+  background: #144250;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0.5em 1.2em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  outline: none; }
+
+.submit:hover,
+.submit:focus {
+  border: 1px solid #144250;
+  background: transparent;
+  color: #144250;
+  cursor: pointer; }
 
 .our-team .header {
   background: url("../img/team.jpg") no-repeat center;
@@ -908,24 +929,6 @@ input::placeholder {
   margin-left: 1em;
   color: #144250; }
 
-.submit {
-  border: 1px solid #144250;
-  background: #144250;
-  color: #FFF;
-  text-transform: uppercase;
-  font-weight: 900;
-  padding: 0.5em 1.2em;
-  border-radius: 0.5em;
-  margin-top: 2em;
-  outline: none; }
-
-.submit:hover,
-.submit:focus {
-  border: 1px solid #144250;
-  background: transparent;
-  color: #144250;
-  cursor: pointer; }
-
 .contact-us {
   display: flex;
   flex-wrap: wrap;
@@ -965,6 +968,38 @@ textarea {
 
 .address {
   margin-right: 3em; }
+
+.cart-content {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border: 1px solid #144250; }
+
+.product-image {
+  height: 200px; }
+  .product-image img {
+    display: block;
+    height: 100%;
+    width: auto; }
+
+.size {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #144250;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1em; }
+
+.related-items {
+  display: flex;
+  justify-content: center; }
+  .related-items li {
+    flex-basis: 29%; }
+  .related-items img {
+    display: block;
+    width: 100%; }
 
 .site-footer {
   display: flex;

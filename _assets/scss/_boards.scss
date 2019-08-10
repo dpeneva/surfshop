@@ -18,6 +18,10 @@
         opacity: 0;
         transition: opacity 0.4s ease-in;
     
+        // & p {
+        //     height: 100px;
+        //     overflow: auto;
+        // }
         & a {
             display: block;
             width: 100%;
