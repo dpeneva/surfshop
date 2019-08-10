@@ -109,5 +109,11 @@ p.description {
     border-radius: 0.2em;
 } 
 
+.events .wrapper {
+    display: flex;
 
-
+    & .article a {
+        display: flex;
+        flex-direction: column;
+    }
+}

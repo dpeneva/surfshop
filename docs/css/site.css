@@ -389,6 +389,12 @@ p.description {
   width: 100%;
   border-radius: 0.2em; }
 
+.events .wrapper {
+  display: flex; }
+  .events .wrapper .article a {
+    display: flex;
+    flex-direction: column; }
+
 .btn {
   color: #FFF;
   border: 2px solid #FFF;
